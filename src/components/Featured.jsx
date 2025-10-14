@@ -1,11 +1,14 @@
 import React from "react";
-import sample1 from "/images/featured/1.JPG";
-import sample2 from "/images/featured/2.JPG";
-import sample3 from "/images/featured/3.JPG";
-import sample4 from "/images/featured/4.JPG";
-import sample5 from "/images/featured/5.JPG";
 
 export default function Work() {
+  const images = [
+    "https://photos.adiavi.com/images/places/japan.jpg",
+    "https://photos.adiavi.com/images/places/oregon.JPG",
+    "https://photos.adiavi.com/images/places/scotland.JPG",
+    "https://photos.adiavi.com/images/places/cayman.JPG",
+    "https://photos.adiavi.com/images/places/ireland.JPG",
+  ];
+
   return (
     <section className="relative me bg-white mx-auto max-w-[115rem] px-10 py-32">
       <div className="flex flex-col md:flex-row items-start gap-12">
@@ -40,7 +43,7 @@ export default function Work() {
           {/* Top-right image aligned with paragraph */}
           <div className="flex items-start justify-end w-full relative">
             <img
-              src={sample1}
+              src={images[0]}
               alt="Work 1"
               className="w-[500px] h-[380px] object-cover shadow-lg grayscale-0 hover:grayscale-0-0 transition duration-300"
             />
@@ -49,22 +52,22 @@ export default function Work() {
           {/* Messy grid below */}
           <div className="grid grid-cols-2 gap-5 mt-8 relative">
             <img
-              src={sample2}
+              src={images[1]}
               alt="Work 2"
               className="w-[540px] h-[360px] object-cover shadow-md -rotate-2 grayscale-0 hover:grayscale-0-0 transition duration-300"
             />
             <img
-              src={sample3}
+              src={images[2]}
               alt="Work 3"
               className="w-[400px] h-[220px] object-cover shadow-md rotate-1 mt-10 grayscale-0 hover:grayscale-0-0 transition duration-300"
             />
             <img
-              src={sample4}
+              src={images[3]}
               alt="Work 4"
               className="w-[800px] h-[300px] object-cover shadow-md -rotate-1 mt-[10px] grayscale-0 hover:grayscale-0-0 transition duration-300"
             />
             <img
-              src={sample5}
+              src={images[4]}
               alt="Work 5"
               className="w-[220px] h-[250px] object-cover shadow-md rotate-3 ml-20 mt-[-50px] grayscale-0 hover:grayscale-0-0 transition duration-300"
             />

@@ -1,26 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import japan from "/images/places/japan.jpg";
-import oregon from "/images/places/oregon.JPG";
-import scotland from "/images/places/scotland.JPG";
-import cayman from "/images/places/cayman.JPG";
-import ireland from "/images/places/ireland.JPG";
-import cars from "/images/places/cars.JPG";
-import flowers from '/images/places/flowers.JPG';
-import fireworks from '/images/places/fireworks.JPG';
-import club from '/images/places/club.JPG';
 
 function FeaturedLocations() {
   const locations = [
-    { name: "Japan", image: japan, path: "/japan" },
-    { name: "Oregon", image: oregon, path: "/oregon" },
-    { name: "Scotland", image: scotland, path: "/scotland" },
-    { name: "Cayman Island", image: cayman, path: "/cayman" },
-    { name: "Ireland", image: ireland, path: "/ireland" },
-    { name: "Cars", image: cars, path: "/cars" },
-    { name: "Flowers", image: flowers, path: "/flowers" },
-    { name: "Fireworks", image: fireworks, path: "/fireworks" },
-    { name: "Club", image: club, path: "/club" }
+    { name: "Japan", image: "https://photos.adiavi.com/images/places/japan.jpg", path: "/japan" },
+    { name: "Oregon", image: "https://photos.adiavi.com/images/places/oregon.JPG", path: "/oregon" },
+    { name: "Scotland", image: "https://photos.adiavi.com/images/places/scotland.JPG", path: "/scotland" },
+    { name: "Cayman Island", image: "https://photos.adiavi.com/images/places/cayman.JPG", path: "/cayman" },
+    { name: "Ireland", image: "https://photos.adiavi.com/images/places/ireland.JPG", path: "/ireland" },
+    { name: "Cars", image: "https://photos.adiavi.com/images/places/cars.JPG", path: "/cars" },
+    { name: "Flowers", image: "https://photos.adiavi.com/images/places/flowers.JPG", path: "/flowers" },
+    { name: "Fireworks", image: "https://photos.adiavi.com/images/places/fireworks.JPG", path: "/fireworks" },
+    { name: "Club", image: "https://photos.adiavi.com/images/places/club.JPG", path: "/club" }
   ];
 
   return (

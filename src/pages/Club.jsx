@@ -2,39 +2,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// Import Club images - you'll need to add these to your assets
-import club1 from "/images/club/1.JPG";
-import club2 from "/images/club/2.JPG";
-import club3 from "/images/club/3.JPG";
-import club4 from "/images/club/4.JPG";
-import club5 from "/images/club/5.JPG";
-import club6 from "/images/club/6.JPG";
-import club7 from "/images/club/7.JPG";
-import club8 from "/images/club/8.JPG";
-import club9 from "/images/club/9.JPG";
-import club10 from "/images/club/10.JPG";
-import club11 from "/images/club/11.JPG";
-import club12 from "/images/club/12.JPG";
-import club13 from "/images/club/13.JPG";
-import club14 from "/images/club/14.JPG";
 import Navbar from '../components/Navbar';
 
 function Club() {
   const clubImages = [
-    { src: club1, width: 520, height: 350, rotation: -2, span: '' },
-    { src: club2, width: 380, height: 570, rotation: 3, span: 'md:col-span-2' },
-    { src: club3, width: 450, height: 300, rotation: 1, span: '' },
-    { src: club4, width: 580, height: 390, rotation: -3, span: 'lg:col-span-2' },
-    { src: club5, width: 340, height: 510, rotation: 2, span: '' },
-    { src: club6, width: 490, height: 330, rotation: -1, span: '' },
-    { src: club7, width: 410, height: 590, rotation: 4, span: 'md:col-span-2' },
-    { src: club8, width: 530, height: 360, rotation: -2, span: '' },
-    { src: club9, width: 370, height: 520, rotation: 1, span: '' },
-    { src: club10, width: 460, height: 310, rotation: -3, span: 'lg:col-span-2' },
-    { src: club11, width: 600, height: 400, rotation: 2, span: '' },
-    { src: club12, width: 320, height: 480, rotation: -1, span: '' },
-    { src: club13, width: 540, height: 370, rotation: 3, span: '' },
-    { src: club14, width: 390, height: 540, rotation: -2, span: 'md:col-span-2' }
+    { src: "https://photos.adiavi.com/images/club/1.JPG", width: 520, height: 350, rotation: -2, span: '' },
+    { src: "https://photos.adiavi.com/images/club/2.JPG", width: 380, height: 570, rotation: 3, span: 'md:col-span-2' },
+    { src: "https://photos.adiavi.com/images/club/3.JPG", width: 450, height: 300, rotation: 1, span: '' },
+    { src: "https://photos.adiavi.com/images/club/4.JPG", width: 580, height: 390, rotation: -3, span: 'lg:col-span-2' },
+    { src: "https://photos.adiavi.com/images/club/5.JPG", width: 340, height: 510, rotation: 2, span: '' },
+    { src: "https://photos.adiavi.com/images/club/6.JPG", width: 490, height: 330, rotation: -1, span: '' },
+    { src: "https://photos.adiavi.com/images/club/7.JPG", width: 410, height: 590, rotation: 4, span: 'md:col-span-2' },
+    { src: "https://photos.adiavi.com/images/club/8.JPG", width: 530, height: 360, rotation: -2, span: '' },
+    { src: "https://photos.adiavi.com/images/club/9.JPG", width: 370, height: 520, rotation: 1, span: '' },
+    { src: "https://photos.adiavi.com/images/club/10.JPG", width: 460, height: 310, rotation: -3, span: 'lg:col-span-2' },
+    { src: "https://photos.adiavi.com/images/club/11.JPG", width: 600, height: 400, rotation: 2, span: '' },
+    { src: "https://photos.adiavi.com/images/club/12.JPG", width: 320, height: 480, rotation: -1, span: '' },
+    { src: "https://photos.adiavi.com/images/club/13.JPG", width: 540, height: 370, rotation: 3, span: '' },
+    { src: "https://photos.adiavi.com/images/club/14.JPG", width: 390, height: 540, rotation: -2, span: 'md:col-span-2' }
   ];
 
   return (

@@ -8,7 +8,7 @@ function Hero() {
       {/* Centered Image */}
       <div className="absolute inset-0 flex items-center mb-45 justify-center">
         <img
-          src="/images/hero/joe.png"
+          src="https://photos.adiavi.com/images/hero/joe.png"
           alt="joe mcdavid"
           className="w-[249.02px] h-[332.02px] object-cover"
         />
