@@ -6,11 +6,11 @@ const Navbar = () => {
 
   const menuItems = [
     "Home",
-    "Process",
     "Trips",
-    "Misc",
-    "Contact",
-    "Store",
+    "Japan",
+    "Ireland",
+    "Cayman",
+    "Scotland",
   ];
 
   return (

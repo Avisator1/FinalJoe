@@ -31,7 +31,7 @@ function Ireland() {
   return (
     <div>
       <Navbar />
-      <section className="bg-white mx-auto max-w-[115rem] px-10 py-32">
+      <section className="bg-white me mx-auto max-w-[115rem] px-10 py-32">
         {/* Header */}
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-4">
