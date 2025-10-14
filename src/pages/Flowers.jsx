@@ -3,20 +3,20 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 // Import Flowers images - you'll need to add these to your assets
-import flowers1 from "../assets/images/flowers/1.JPG";
-import flowers2 from "../assets/images/flowers/2.JPG";
-import flowers3 from "../assets/images/flowers/3.JPG";
-import flowers4 from "../assets/images/flowers/4.JPG";
-import flowers5 from "../assets/images/flowers/5.JPG";
-import flowers6 from "../assets/images/flowers/6.JPG";
-import flowers7 from "../assets/images/flowers/7.JPG";
-import flowers8 from "../assets/images/flowers/8.JPG";
-import flowers9 from "../assets/images/flowers/9.JPG";
-import flowers10 from "../assets/images/flowers/10.jpg";
-import flowers11 from "../assets/images/flowers/11.jpg";
-import flowers12 from "../assets/images/flowers/12.jpg";
-import flowers13 from "../assets/images/flowers/13.jpg";
-import flowers14 from "../assets/images/flowers/14.jpg";
+import flowers1 from "/images/flowers/1.JPG";
+import flowers2 from "/images/flowers/2.JPG";
+import flowers3 from "/images/flowers/3.JPG";
+import flowers4 from "/images/flowers/4.JPG";
+import flowers5 from "/images/flowers/5.JPG";
+import flowers6 from "/images/flowers/6.JPG";
+import flowers7 from "/images/flowers/7.JPG";
+import flowers8 from "/images/flowers/8.JPG";
+import flowers9 from "/images/flowers/9.JPG";
+import flowers10 from "/images/flowers/10.jpg";
+import flowers11 from "/images/flowers/11.jpg";
+import flowers12 from "/images/flowers/12.jpg";
+import flowers13 from "/images/flowers/13.jpg";
+import flowers14 from "/images/flowers/14.jpg";
 import Navbar from '../components/Navbar';
 
 function Flowers() {

@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import japan from "../assets/images/places/japan.jpg";
-import oregon from "../assets/images/places/oregon.JPG";
-import scotland from "../assets/images/places/scotland.JPG";
-import cayman from "../assets/images/places/cayman.JPG";
-import ireland from "../assets/images/places/ireland.JPG";
-import cars from "../assets/images/places/cars.JPG";
-import flowers from '../assets/images/places/flowers.JPG';
-import fireworks from '../assets/images/places/fireworks.JPG';
-import club from '../assets/images/places/club.JPG';
+import japan from "/images/places/japan.jpg";
+import oregon from "/images/places/oregon.JPG";
+import scotland from "/images/places/scotland.JPG";
+import cayman from "/images/places/cayman.JPG";
+import ireland from "/images/places/ireland.JPG";
+import cars from "/images/places/cars.JPG";
+import flowers from '/images/places/flowers.JPG';
+import fireworks from '/images/places/fireworks.JPG';
+import club from '/images/places/club.JPG';
 
 function FeaturedLocations() {
   const locations = [

@@ -3,27 +3,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Import Ireland images - you'll need to add these to your assets
-import ireland1 from "../assets/images/ireland/1.JPG";
-import ireland2 from "../assets/images/ireland/2.JPG";
-import ireland3 from "../assets/images/ireland/3.JPG";
-import ireland4 from "../assets/images/ireland/4.JPG";
-import ireland5 from "../assets/images/ireland/5.JPG";
-import ireland6 from "../assets/images/ireland/6.JPG";
-import ireland7 from "../assets/images/ireland/7.JPG";
-import ireland8 from "../assets/images/ireland/8.JPG";
-import ireland9 from "../assets/images/ireland/9.JPG";
-import ireland10 from "../assets/images/ireland/10.JPG";
-import ireland11 from "../assets/images/ireland/11.JPG";
-import ireland12 from "../assets/images/ireland/12.JPG";
-import ireland13 from "../assets/images/ireland/13.JPG";
-import ireland14 from "../assets/images/ireland/14.JPG";
-import ireland15 from "../assets/images/ireland/15.JPG";
-import ireland16 from "../assets/images/ireland/16.JPG";
-import ireland17 from "../assets/images/ireland/17.JPG";
-import ireland18 from "../assets/images/ireland/18.JPG";
-import ireland19 from "../assets/images/ireland/19.JPG";
-import ireland20 from "../assets/images/ireland/20.JPG";
-import ireland21 from "../assets/images/ireland/21.JPG";
+import ireland1 from "/images/ireland/1.JPG";
+import ireland2 from "/images/ireland/2.JPG";
+import ireland3 from "/images/ireland/3.JPG";
+import ireland4 from "/images/ireland/4.JPG";
+import ireland5 from "/images/ireland/5.JPG";
+import ireland6 from "/images/ireland/6.JPG";
+import ireland7 from "/images/ireland/7.JPG";
+import ireland8 from "/images/ireland/8.JPG";
+import ireland9 from "/images/ireland/9.JPG";
+import ireland10 from "/images/ireland/10.JPG";
+import ireland11 from "/images/ireland/11.JPG";
+import ireland12 from "/images/ireland/12.JPG";
+import ireland13 from "/images/ireland/13.JPG";
+import ireland14 from "/images/ireland/14.JPG";
+import ireland15 from "/images/ireland/15.JPG";
+import ireland16 from "/images/ireland/16.JPG";
+import ireland17 from "/images/ireland/17.JPG";
+import ireland18 from "/images/ireland/18.JPG";
+import ireland19 from "/images/ireland/19.JPG";
+import ireland20 from "/images/ireland/20.JPG";
+import ireland21 from "/images/ireland/21.JPG";
 import Navbar from '../components/Navbar';
 
 function Ireland() {

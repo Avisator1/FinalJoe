@@ -3,16 +3,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Import Scotland images - you'll need to add these to your assets
-import scotland1 from "../assets/images/scotland/1.JPG";
-import scotland2 from "../assets/images/scotland/2.JPG";
-import scotland3 from "../assets/images/scotland/3.JPG";
-import scotland4 from "../assets/images/scotland/4.JPG";
-import scotland5 from "../assets/images/scotland/5.JPG";
-import scotland6 from "../assets/images/scotland/6.JPG";
-import scotland7 from "../assets/images/scotland/7.JPG";
-import scotland8 from "../assets/images/scotland/8.JPG";
-import scotland9 from "../assets/images/scotland/9.JPG";
-import scotland10 from "../assets/images/scotland/10.JPG";
+import scotland1 from "/images/scotland/1.JPG";
+import scotland2 from "/images/scotland/2.JPG";
+import scotland3 from "/images/scotland/3.JPG";
+import scotland4 from "/images/scotland/4.JPG";
+import scotland5 from "/images/scotland/5.JPG";
+import scotland6 from "/images/scotland/6.JPG";
+import scotland7 from "/images/scotland/7.JPG";
+import scotland8 from "/images/scotland/8.JPG";
+import scotland9 from "/images/scotland/9.JPG";
+import scotland10 from "/images/scotland/10.JPG";
 import Navbar from '../components/Navbar';
 
 function Scotland() {

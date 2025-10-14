@@ -1,9 +1,9 @@
 import React from "react";
-import sample1 from "../assets/images/featured/1.JPG";
-import sample2 from "../assets/images/featured/2.JPG";
-import sample3 from "../assets/images/featured/3.JPG";
-import sample4 from "../assets/images/featured/4.JPG";
-import sample5 from "../assets/images/featured/5.JPG";
+import sample1 from "/images/featured/1.JPG";
+import sample2 from "/images/featured/2.JPG";
+import sample3 from "/images/featured/3.JPG";
+import sample4 from "/images/featured/4.JPG";
+import sample5 from "/images/featured/5.JPG";
 
 export default function Work() {
   return (

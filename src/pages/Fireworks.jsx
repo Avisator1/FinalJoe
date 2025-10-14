@@ -3,20 +3,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Import Fireworks images - you'll need to add these to your assets
-import fireworks1 from "../assets/images/fireworks/1.JPG";
-import fireworks2 from "../assets/images/fireworks/2.JPG";
-import fireworks3 from "../assets/images/fireworks/3.JPG";
-import fireworks4 from "../assets/images/fireworks/4.JPG";
-import fireworks5 from "../assets/images/fireworks/5.JPG";
-import fireworks6 from "../assets/images/fireworks/6.JPG";
-import fireworks7 from "../assets/images/fireworks/7.JPG";
-import fireworks8 from "../assets/images/fireworks/8.JPG";
-import fireworks9 from "../assets/images/fireworks/9.JPG";
-import fireworks10 from "../assets/images/fireworks/10.JPG";
-import fireworks11 from "../assets/images/fireworks/11.JPG";
-import fireworks12 from "../assets/images/fireworks/12.JPG";
-import fireworks13 from "../assets/images/fireworks/13.JPG";
-import fireworks14 from "../assets/images/fireworks/14.JPG";
+import fireworks1 from "/images/fireworks/1.JPG";
+import fireworks2 from "/images/fireworks/2.JPG";
+import fireworks3 from "/images/fireworks/3.JPG";
+import fireworks4 from "/images/fireworks/4.JPG";
+import fireworks5 from "/images/fireworks/5.JPG";
+import fireworks6 from "/images/fireworks/6.JPG";
+import fireworks7 from "/images/fireworks/7.JPG";
+import fireworks8 from "/images/fireworks/8.JPG";
+import fireworks9 from "/images/fireworks/9.JPG";
+import fireworks10 from "/images/fireworks/10.JPG";
+import fireworks11 from "/images/fireworks/11.JPG";
+import fireworks12 from "/images/fireworks/12.JPG";
+import fireworks13 from "/images/fireworks/13.JPG";
+import fireworks14 from "/images/fireworks/14.JPG";
 import Navbar from '../components/Navbar';
 
 function Fireworks() {

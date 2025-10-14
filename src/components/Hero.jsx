@@ -1,6 +1,5 @@
 // Hero.jsx
 import React from 'react'
-import joe from '../assets/images/hero/joe.png'
 import { ScreenFitText } from './ScreenToText'
 
 function Hero() {
@@ -9,7 +8,7 @@ function Hero() {
       {/* Centered Image */}
       <div className="absolute inset-0 flex items-center mb-45 justify-center">
         <img
-          src={joe}
+          src="/images/hero/joe.png"
           alt="joe mcdavid"
           className="w-[249.02px] h-[332.02px] object-cover"
         />

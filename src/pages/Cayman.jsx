@@ -3,20 +3,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Import Cayman images - you'll need to add these to your assets
-import cayman1 from "../assets/images/cayman/1.JPG";
-import cayman2 from "../assets/images/cayman/2.JPG";
-import cayman3 from "../assets/images/cayman/3.JPG";
-import cayman4 from "../assets/images/cayman/4.JPG";
-import cayman5 from "../assets/images/cayman/5.JPG";
-import cayman6 from "../assets/images/cayman/6.JPG";
-import cayman7 from "../assets/images/cayman/7.JPG";
-import cayman8 from "../assets/images/cayman/8.JPG";
-import cayman9 from "../assets/images/cayman/9.JPG";
-import cayman10 from "../assets/images/cayman/10.JPG";
-import cayman11 from "../assets/images/cayman/11.JPG";
-import cayman12 from "../assets/images/cayman/12.JPG";
-import cayman13 from "../assets/images/cayman/13.JPG";
-import cayman14 from "../assets/images/cayman/14.JPG";
+import cayman1 from "/images/cayman/1.JPG";
+import cayman2 from "/images/cayman/2.JPG";
+import cayman3 from "/images/cayman/3.JPG";
+import cayman4 from "/images/cayman/4.JPG";
+import cayman5 from "/images/cayman/5.JPG";
+import cayman6 from "/images/cayman/6.JPG";
+import cayman7 from "/images/cayman/7.JPG";
+import cayman8 from "/images/cayman/8.JPG";
+import cayman9 from "/images/cayman/9.JPG";
+import cayman10 from "/images/cayman/10.JPG";
+import cayman11 from "/images/cayman/11.JPG";
+import cayman12 from "/images/cayman/12.JPG";
+import cayman13 from "/images/cayman/13.JPG";
+import cayman14 from "/images/cayman/14.JPG";
 import Navbar from '../components/Navbar';
 
 function Cayman() {

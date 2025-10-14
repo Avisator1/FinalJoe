@@ -3,21 +3,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Import Cars images - you'll need to add these to your assets
-import cars1 from "../assets/images/cars/1.JPG";
-import cars2 from "../assets/images/cars/2.JPG";
-import cars3 from "../assets/images/cars/3.JPG";
-import cars4 from "../assets/images/cars/4.JPG";
-import cars5 from "../assets/images/cars/5.JPG";
-import cars6 from "../assets/images/cars/6.JPG";
-import cars7 from "../assets/images/cars/7.JPG";
-import cars8 from "../assets/images/cars/8.JPG";
-import cars9 from "../assets/images/cars/9.JPG";
-import cars10 from "../assets/images/cars/10.JPG";
-import cars11 from "../assets/images/cars/11.JPG";
-import cars12 from "../assets/images/cars/12.JPG";
-import cars13 from "../assets/images/cars/13.JPG";
-import cars14 from "../assets/images/cars/14.JPG";
-import cars15 from "../assets/images/cars/15.JPG";
+import cars1 from "/images/cars/1.JPG";
+import cars2 from "/images/cars/2.JPG";
+import cars3 from "/images/cars/3.JPG";
+import cars4 from "/images/cars/4.JPG";
+import cars5 from "/images/cars/5.JPG";
+import cars6 from "/images/cars/6.JPG";
+import cars7 from "/images/cars/7.JPG";
+import cars8 from "/images/cars/8.JPG";
+import cars9 from "/images/cars/9.JPG";
+import cars10 from "/images/cars/10.JPG";
+import cars11 from "/images/cars/11.JPG";
+import cars12 from "/images/cars/12.JPG";
+import cars13 from "/images/cars/13.JPG";
+import cars14 from "/images/cars/14.JPG";
+import cars15 from "/images/cars/15.JPG";
 import Navbar from '../components/Navbar';
 
 function Cars() {

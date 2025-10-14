@@ -3,20 +3,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Import Club images - you'll need to add these to your assets
-import club1 from "../assets/images/club/1.JPG";
-import club2 from "../assets/images/club/2.JPG";
-import club3 from "../assets/images/club/3.JPG";
-import club4 from "../assets/images/club/4.JPG";
-import club5 from "../assets/images/club/5.JPG";
-import club6 from "../assets/images/club/6.JPG";
-import club7 from "../assets/images/club/7.JPG";
-import club8 from "../assets/images/club/8.JPG";
-import club9 from "../assets/images/club/9.JPG";
-import club10 from "../assets/images/club/10.JPG";
-import club11 from "../assets/images/club/11.JPG";
-import club12 from "../assets/images/club/12.JPG";
-import club13 from "../assets/images/club/13.JPG";
-import club14 from "../assets/images/club/14.JPG";
+import club1 from "/images/club/1.JPG";
+import club2 from "/images/club/2.JPG";
+import club3 from "/images/club/3.JPG";
+import club4 from "/images/club/4.JPG";
+import club5 from "/images/club/5.JPG";
+import club6 from "/images/club/6.JPG";
+import club7 from "/images/club/7.JPG";
+import club8 from "/images/club/8.JPG";
+import club9 from "/images/club/9.JPG";
+import club10 from "/images/club/10.JPG";
+import club11 from "/images/club/11.JPG";
+import club12 from "/images/club/12.JPG";
+import club13 from "/images/club/13.JPG";
+import club14 from "/images/club/14.JPG";
 import Navbar from '../components/Navbar';
 
 function Club() {
