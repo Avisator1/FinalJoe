@@ -15,7 +15,7 @@ export default function Work() {
         {/* LEFT TEXT */}
         <div className="md:w-1/2">
           <p className="text-xl mb-4 tracking-wide text-gray-800">02.WORK</p>
-          <h2 className="text-[150px] font-[580] leading-none mb-8 text-black">
+          <h2 className="text-[130px] font-[580] leading-none mb-8 text-black">
             Photography
           </h2>
           <p className="text-3xl text-black leading-snug max-w-xl mb-16">
