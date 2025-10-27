@@ -11,7 +11,7 @@ function Hero() {
         <img
           src={joe}
           alt="joe mcdavid"
-          className="w-[1000.02px] h-[332.02px] object-cover"
+          className="w-[800.02px] h-[332.02px] object-cover"
         />
       </div>
 

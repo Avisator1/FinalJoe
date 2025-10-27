@@ -9,9 +9,9 @@ function FeaturedLocations() {
     { name: "Cayman Island", image: "https://photos.adiavi.com/images/places/cayman.jpg", path: "/cayman" },
     { name: "Ireland", image: "https://photos.adiavi.com/images/places/ireland.jpg", path: "/ireland" },
     { name: "Cars", image: "https://photos.adiavi.com/images/places/cars.jpg", path: "/cars" },
-    { name: "Nature", image: "https://photos.adiavi.com/images/places/flowers.jpg", path: "/flowers" },
-    { name: "Fireworks", image: "https://photos.adiavi.com/images/places/fireworks.jpg", path: "/fireworks" },
-    { name: "Club", image: "https://photos.adiavi.com/images/places/club.jpg", path: "/club" }
+    { name: "Nature", image: "https://photos.adiavi.com/images/places/flowers.JPG", path: "/flowers" },
+    { name: "Fireworks", image: "https://photos.adiavi.com/images/places/fireworks.JPG", path: "/fireworks" },
+    { name: "Club", image: "https://photos.adiavi.com/images/places/club.JPG", path: "/club" }
   ];
 
   return (

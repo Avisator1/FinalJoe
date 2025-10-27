@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Work() {
   const images = [
-    "https://photos.adiavi.com/images/featured/1.jpg",
-    "https://photos.adiavi.com/images/featured/2.jpg",
-    "https://photos.adiavi.com/images/featured/3.jpg",
-    "https://photos.adiavi.com/images/featured/4.jpg",
-    "https://photos.adiavi.com/images/featured/5.jpg",
+    "https://photos.adiavi.com/images/featured/1.JPG",
+    "https://photos.adiavi.com/images/featured/2.JPG",
+    "https://photos.adiavi.com/images/featured/3.JPG",
+    "https://photos.adiavi.com/images/featured/4.JPG",
+    "https://photos.adiavi.com/images/featured/5.JPG",
   ];
 
   return (

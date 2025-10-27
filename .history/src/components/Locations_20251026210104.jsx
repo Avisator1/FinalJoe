@@ -5,13 +5,13 @@ function FeaturedLocations() {
   const locations = [
     { name: "Japan", image: "https://photos.adiavi.com/images/places/japan.jpg", path: "/japan" },
     { name: "Oregon", image: "https://photos.adiavi.com/images/places/oregon.jpg", path: "/oregon" },
-    { name: "Scotland", image: "https://photos.adiavi.com/images/places/scotland.jpg", path: "/scotland" },
-    { name: "Cayman Island", image: "https://photos.adiavi.com/images/places/cayman.jpg", path: "/cayman" },
-    { name: "Ireland", image: "https://photos.adiavi.com/images/places/ireland.jpg", path: "/ireland" },
-    { name: "Cars", image: "https://photos.adiavi.com/images/places/cars.jpg", path: "/cars" },
-    { name: "Nature", image: "https://photos.adiavi.com/images/places/flowers.jpg", path: "/flowers" },
-    { name: "Fireworks", image: "https://photos.adiavi.com/images/places/fireworks.jpg", path: "/fireworks" },
-    { name: "Club", image: "https://photos.adiavi.com/images/places/club.jpg", path: "/club" }
+    { name: "Scotland", image: "https://photos.adiavi.com/images/places/scotland.JPG", path: "/scotland" },
+    { name: "Cayman Island", image: "https://photos.adiavi.com/images/places/cayman.JPG", path: "/cayman" },
+    { name: "Ireland", image: "https://photos.adiavi.com/images/places/ireland.JPG", path: "/ireland" },
+    { name: "Cars", image: "https://photos.adiavi.com/images/places/cars.JPG", path: "/cars" },
+    { name: "Nature", image: "https://photos.adiavi.com/images/places/flowers.JPG", path: "/flowers" },
+    { name: "Fireworks", image: "https://photos.adiavi.com/images/places/fireworks.JPG", path: "/fireworks" },
+    { name: "Club", image: "https://photos.adiavi.com/images/places/club.JPG", path: "/club" }
   ];
 
   return (
