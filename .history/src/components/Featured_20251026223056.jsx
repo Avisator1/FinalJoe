@@ -33,9 +33,9 @@ export default function Work() {
             <ul className="text-2xl text-black font-[500] leading-relaxed space-y-2">
               <li>SONY A7CR</li>
               <li>SONY ZV-E10</li>
-              <li>SIGMA 70-200MM F2.8</li>
+              <li>SIGMA 70-200mm F2.8</li>
               <li>SONY 50MM F1.8</li>
-              <li>SONY 24-50MM F2.8</li>
+              <li>SONY 24-50MM F2.8<li></li>
             </ul>
           </div>
         </div>
