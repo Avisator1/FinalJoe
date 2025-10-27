@@ -1,57 +1,47 @@
-// Flowers.jsx
+// Cayman.jsx
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
-function Flowers() {
-  const navigate = useNavigate();
-
-  const handleBackToLocations = () => {
-    navigate('/#locations');
-    setTimeout(() => {
-      const element = document.getElementById('locations');
-      if (element) element.scrollIntoView({ behavior: 'smooth' });
-    }, 100);
-  };
-
-  const flowersImages = [
-    { src: "https://photos.adiavi.com/images/flowers/1.jpg", width: 520, height: 350, rotation: -2, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/2.jpg", width: 380, height: 570, rotation: 3, span: 'md:col-span-2' },
-    { src: "https://photos.adiavi.com/images/flowers/3.jpg", width: 450, height: 300, rotation: 1, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/4.jpg", width: 580, height: 390, rotation: -3, span: 'lg:col-span-2' },
-    { src: "https://photos.adiavi.com/images/flowers/5.jpg", width: 340, height: 510, rotation: 2, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/6.jpg", width: 490, height: 330, rotation: -1, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/7.jpg", width: 410, height: 590, rotation: 4, span: 'md:col-span-2' },
-    { src: "https://photos.adiavi.com/images/flowers/8.jpg", width: 530, height: 360, rotation: -2, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/9.jpg", width: 370, height: 520, rotation: 1, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/10.jpg", width: 460, height: 310, rotation: -3, span: 'lg:col-span-2' },
-    { src: "https://photos.adiavi.com/images/flowers/11.jpg", width: 600, height: 400, rotation: 2, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/12.jpg", width: 320, height: 480, rotation: -1, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/13.jpg", width: 540, height: 370, rotation: 3, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/14.jpg", width: 390, height: 540, rotation: -2, span: 'md:col-span-2' },
+function Cayman() {
+  const caymanImages = [
+    { src: "https://photos.adiavi.com/images/cayman/1.JPG", width: 520, height: 350, rotation: -2, span: '' },
+    { src: "https://photos.adiavi.com/images/cayman/2.JPG", width: 380, height: 570, rotation: 3, span: 'md:col-span-2' },
+    { src: "https://photos.adiavi.com/images/cayman/3.JPG", width: 450, height: 300, rotation: 1, span: '' },
+    { src: "https://photos.adiavi.com/images/cayman/4.JPG", width: 580, height: 390, rotation: -3, span: 'lg:col-span-2' },
+    { src: "https://photos.adiavi.com/images/cayman/5.JPG", width: 340, height: 510, rotation: 2, span: '' },
+    { src: "https://photos.adiavi.com/images/cayman/6.JPG", width: 490, height: 330, rotation: -1, span: '' },
+    { src: "https://photos.adiavi.com/images/cayman/7.JPG", width: 410, height: 590, rotation: 4, span: 'md:col-span-2' },
+    { src: "https://photos.adiavi.com/images/cayman/8.JPG", width: 530, height: 360, rotation: -2, span: '' },
+    { src: "https://photos.adiavi.com/images/cayman/9.JPG", width: 370, height: 520, rotation: 1, span: '' },
+    { src: "https://photos.adiavi.com/images/cayman/10.JPG", width: 460, height: 310, rotation: -3, span: 'lg:col-span-2' },
+    { src: "https://photos.adiavi.com/images/cayman/11.JPG", width: 600, height: 400, rotation: 2, span: '' },
+    { src: "https://photos.adiavi.com/images/cayman/12.JPG", width: 320, height: 480, rotation: -1, span: '' },
+    { src: "https://photos.adiavi.com/images/cayman/13.JPG", width: 540, height: 370, rotation: 3, span: '' },
+    { src: "https://photos.adiavi.com/images/cayman/14.JPG", width: 390, height: 540, rotation: -2, span: 'md:col-span-2' }
   ];
 
   return (
     <div>
       <Navbar />
-      <section className="bg-white mx-auto me max-w-[115rem] px-10 py-32">
+      <section className="bg-white mx-auto max-w-[115rem] px-10 py-32 me">
         {/* Header */}
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-4">
-            <button 
-              onClick={handleBackToLocations}
+            <Link 
+              to="/#locations" 
               className="text-xl tracking-wide text-gray-600 hover:text-black transition duration-300"
             >
               ← BACK TO LOCATIONS
-            </button>
-            <p className="text-xl tracking-wide text-gray-800">FLOWERS COLLECTION</p>
+            </Link>
+            <p className="text-xl tracking-wide text-gray-800">CAYMAN ISLANDS COLLECTION</p>
           </div>
           <h2 className="text-[200px] font-[580] leading-none mb-8 text-black">
-            Nature
+            Cayman Islands
           </h2>
           <p className="text-3xl text-black leading-snug max-w-4xl">
-            Delicate petals, vibrant colors, and nature's intricate beauty—capturing the ephemeral 
-            artistry of blooms where every flower tells a story of growth, beauty, and transformation.
+            Turquoise waters, white sand beaches, and vibrant marine life—capturing the tropical paradise 
+            where crystal-clear Caribbean waters meet endless summer skies.
           </p>
         </div>
 
@@ -61,15 +51,15 @@ function Flowers() {
             Shot With
           </p>
           <ul className="text-2xl text-black font-[500] leading-relaxed space-y-2">
-            <li>SONY A7CR • Macro & Prime Lenses</li>
+            <li>SONY ZV-E10 • Underwater Housing</li>
             <li>Adobe Lightroom Classic • Photoshop</li>
-            <li>Spring-Summer 2023 • Botanical Gardens & Wild Fields</li>
+            <li>Winter 2023 • Caribbean Waters Expedition</li>
           </ul>
         </div>
 
         {/* Messy Image Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
-          {flowersImages.map((image, index) => (
+          {caymanImages.map((image, index) => (
             <div
               key={index}
               className={`relative group cursor-pointer ${image.span} ${
@@ -80,7 +70,7 @@ function Flowers() {
             >
               <img
                 src={image.src}
-                alt={`Flowers ${index + 1}`}
+                alt={`Cayman Islands ${index + 1}`}
                 className={`w-full h-auto object-cover shadow-xl transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl ${
                   index % 3 === 0 ? 'border-4 border-white' : 'border-2 border-white'
                 }`}
@@ -103,50 +93,42 @@ function Flowers() {
                 About This Collection
               </p>
               <p className="text-2xl text-black leading-relaxed">
-                This botanical series explores the delicate beauty of flowers in their natural 
-                environments—from intimate macro details to sweeping garden landscapes. Each 
-                photograph celebrates the unique character and vibrant life of these natural wonders.
+                From stunning underwater coral gardens to pristine Seven Mile Beach, this series 
+                captures the essence of Caribbean beauty—vibrant colors, brilliant sunlight, and 
+                the incredible biodiversity of Cayman's marine ecosystems.
               </p>
             </div>
             <div className="md:w-1/2">
               <p className="text-lg tracking-wide text-gray-700 mb-4 uppercase">
-                Floral Variety
+                Locations Featured
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <ul className="text-2xl text-black font-[500] space-y-2">
-                  <li>Roses & Peonies</li>
-                  <li>Wildflowers</li>
-                  <li>Tropical Blooms</li>
-                  <li>Spring Bulbs</li>
-                  <li>Succulents</li>
+                  <li>Seven Mile Beach</li>
+                  <li>Stingray City</li>
+                  <li>Rum Point</li>
+                  <li>Bloody Bay Wall</li>
+                  <li>George Town</li>
                 </ul>
                 <ul className="text-2xl text-black font-[500] space-y-2">
-                  <li>Orchids</li>
-                  <li>Sunflowers</li>
-                  <li>Lavender Fields</li>
-                  <li>Cherry Blossoms</li>
-                  <li>Botanical Gardens</li>
+                  <li>Crystal Caves</li>
+                  <li>Starfish Point</li>
+                  <li>Barkers Beach</li>
+                  <li>Queen Elizabeth II Botanic Park</li>
+                  <li>West Bay</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          {/* Botanical Elements */}
+          {/* Tropical Elements */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-gray-200">
             <div>
               <p className="text-lg tracking-wide text-gray-700 mb-2 uppercase">
-                Photography Style
+                Water Conditions
               </p>
               <p className="text-2xl text-black font-[500]">
-                Macro & Natural Light
-              </p>
-            </div>
-            <div>
-              <p className="text-lg tracking-wide text-gray-700 mb-2 uppercase">
-                Season
-              </p>
-              <p className="text-2xl text-black font-[500]">
-                Spring & Summer
+                Crystal Clear & Turquoise
               </p>
             </div>
             <div>
@@ -154,7 +136,15 @@ function Flowers() {
                 Focus
               </p>
               <p className="text-2xl text-black font-[500]">
-                Color & Texture
+                Marine & Beachscapes
+              </p>
+            </div>
+            <div>
+              <p className="text-lg tracking-wide text-gray-700 mb-2 uppercase">
+                Season
+              </p>
+              <p className="text-2xl text-black font-[500]">
+                Winter Escape
               </p>
             </div>
           </div>
@@ -162,24 +152,24 @@ function Flowers() {
 
         {/* Navigation */}
         <div className="mt-20 flex justify-between items-center pt-10 border-t border-gray-200">
-          <button 
-            onClick={handleBackToLocations}
+          <Link 
+            to="/#locations" 
             className="text-2xl text-black font-[500] hover:text-gray-700 transition duration-300"
           >
             ← All Locations
-          </button>
+          </Link>
           <div className="flex gap-8">
+            <Link 
+              to="/scotland" 
+              className="text-2xl text-black font-[500] hover:text-gray-700 transition duration-300"
+            >
+              ← Scotland
+            </Link>
             <Link 
               to="/cars" 
               className="text-2xl text-black font-[500] hover:text-gray-700 transition duration-300"
             >
-              ← Cars
-            </Link>
-            <Link 
-              to="/fireworks" 
-              className="text-2xl text-black font-[500] hover:text-gray-700 transition duration-300"
-            >
-              Fireworks →
+              Cars →
             </Link>
           </div>
         </div>
@@ -188,4 +178,4 @@ function Flowers() {
   );
 }
 
-export default Flowers;
+export default Cayman;

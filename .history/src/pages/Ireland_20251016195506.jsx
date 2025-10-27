@@ -5,27 +5,27 @@ import Navbar from '../components/Navbar';
 
 function Ireland() {
   const irelandImages = [
-    { src: "https://photos.adiavi.com/images/ireland/1.jpg", width: 520, height: 350, rotation: -2, span: '' },
-    { src: "https://photos.adiavi.com/images/ireland/2.jpg", width: 380, height: 570, rotation: 3, span: 'md:col-span-2' },
-    { src: "https://photos.adiavi.com/images/ireland/3.jpg", width: 450, height: 300, rotation: 1, span: '' },
-    { src: "https://photos.adiavi.com/images/ireland/4.jpg", width: 580, height: 390, rotation: -3, span: '' },
-    { src: "https://photos.adiavi.com/images/ireland/5.jpg", width: 340, height: 510, rotation: 2, span: '' },
-    { src: "https://photos.adiavi.com/images/ireland/6.jpg", width: 490, height: 330, rotation: -1, span: 'lg:col-span-2' },
-    { src: "https://photos.adiavi.com/images/ireland/7.jpg", width: 410, height: 590, rotation: 4, span: '' },
-    { src: "https://photos.adiavi.com/images/ireland/8.jpg", width: 530, height: 360, rotation: -2, span: '' },
-    { src: "https://photos.adiavi.com/images/ireland/9.jpg", width: 370, height: 520, rotation: 1, span: '' },
-    { src: "https://photos.adiavi.com/images/ireland/10.jpg", width: 460, height: 310, rotation: -3, span: '' },
-    { src: "https://photos.adiavi.com/images/ireland/11.jpg", width: 600, height: 400, rotation: 2, span: 'md:col-span-2' },
-    { src: "https://photos.adiavi.com/images/ireland/12.jpg", width: 320, height: 480, rotation: -1, span: '' },
-    { src: "https://photos.adiavi.com/images/ireland/13.jpg", width: 540, height: 370, rotation: 3, span: '' },
-    { src: "https://photos.adiavi.com/images/ireland/14.jpg", width: 390, height: 540, rotation: -2, span: '' },
-    { src: "https://photos.adiavi.com/images/ireland/15.jpg", width: 470, height: 320, rotation: 1, span: 'lg:row-span-2' },
-    { src: "https://photos.adiavi.com/images/ireland/16.jpg", width: 510, height: 340, rotation: -3, span: '' },
-    { src: "https://photos.adiavi.com/images/ireland/17.jpg", width: 350, height: 530, rotation: 2, span: '' },
-    { src: "https://photos.adiavi.com/images/ireland/18.jpg", width: 480, height: 325, rotation: -1, span: '' },
-    { src: "https://photos.adiavi.com/images/ireland/19.jpg", width: 430, height: 290, rotation: 3, span: '' },
-    { src: "https://photos.adiavi.com/images/ireland/20.jpg", width: 560, height: 380, rotation: -2, span: 'md:col-span-2' },
-    { src: "https://photos.adiavi.com/images/ireland/21.jpg", width: 400, height: 560, rotation: 1, span: '' }
+    { src: "https://photos.adiavi.com/images/ireland/1.JPG", width: 520, height: 350, rotation: -2, span: '' },
+    { src: "https://photos.adiavi.com/images/ireland/2.JPG", width: 380, height: 570, rotation: 3, span: 'md:col-span-2' },
+    { src: "https://photos.adiavi.com/images/ireland/3.JPG", width: 450, height: 300, rotation: 1, span: '' },
+    { src: "https://photos.adiavi.com/images/ireland/4.JPG", width: 580, height: 390, rotation: -3, span: '' },
+    { src: "https://photos.adiavi.com/images/ireland/5.JPG", width: 340, height: 510, rotation: 2, span: '' },
+    { src: "https://photos.adiavi.com/images/ireland/6.JPG", width: 490, height: 330, rotation: -1, span: 'lg:col-span-2' },
+    { src: "https://photos.adiavi.com/images/ireland/7.JPG", width: 410, height: 590, rotation: 4, span: '' },
+    { src: "https://photos.adiavi.com/images/ireland/8.JPG", width: 530, height: 360, rotation: -2, span: '' },
+    { src: "https://photos.adiavi.com/images/ireland/9.JPG", width: 370, height: 520, rotation: 1, span: '' },
+    { src: "https://photos.adiavi.com/images/ireland/10.JPG", width: 460, height: 310, rotation: -3, span: '' },
+    { src: "https://photos.adiavi.com/images/ireland/11.JPG", width: 600, height: 400, rotation: 2, span: 'md:col-span-2' },
+    { src: "https://photos.adiavi.com/images/ireland/12.JPG", width: 320, height: 480, rotation: -1, span: '' },
+    { src: "https://photos.adiavi.com/images/ireland/13.JPG", width: 540, height: 370, rotation: 3, span: '' },
+    { src: "https://photos.adiavi.com/images/ireland/14.JPG", width: 390, height: 540, rotation: -2, span: '' },
+    { src: "https://photos.adiavi.com/images/ireland/15.JPG", width: 470, height: 320, rotation: 1, span: 'lg:row-span-2' },
+    { src: "https://photos.adiavi.com/images/ireland/16.JPG", width: 510, height: 340, rotation: -3, span: '' },
+    { src: "https://photos.adiavi.com/images/ireland/17.JPG", width: 350, height: 530, rotation: 2, span: '' },
+    { src: "https://photos.adiavi.com/images/ireland/18.JPG", width: 480, height: 325, rotation: -1, span: '' },
+    { src: "https://photos.adiavi.com/images/ireland/19.JPG", width: 430, height: 290, rotation: 3, span: '' },
+    { src: "https://photos.adiavi.com/images/ireland/20.JPG", width: 560, height: 380, rotation: -2, span: 'md:col-span-2' },
+    { src: "https://photos.adiavi.com/images/ireland/21.JPG", width: 400, height: 560, rotation: 1, span: '' }
   ];
 
   return (

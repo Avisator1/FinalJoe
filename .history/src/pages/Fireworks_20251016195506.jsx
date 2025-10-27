@@ -1,57 +1,47 @@
-// Flowers.jsx
+// Fireworks.jsx
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
-function Flowers() {
-  const navigate = useNavigate();
-
-  const handleBackToLocations = () => {
-    navigate('/#locations');
-    setTimeout(() => {
-      const element = document.getElementById('locations');
-      if (element) element.scrollIntoView({ behavior: 'smooth' });
-    }, 100);
-  };
-
-  const flowersImages = [
-    { src: "https://photos.adiavi.com/images/flowers/1.jpg", width: 520, height: 350, rotation: -2, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/2.jpg", width: 380, height: 570, rotation: 3, span: 'md:col-span-2' },
-    { src: "https://photos.adiavi.com/images/flowers/3.jpg", width: 450, height: 300, rotation: 1, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/4.jpg", width: 580, height: 390, rotation: -3, span: 'lg:col-span-2' },
-    { src: "https://photos.adiavi.com/images/flowers/5.jpg", width: 340, height: 510, rotation: 2, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/6.jpg", width: 490, height: 330, rotation: -1, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/7.jpg", width: 410, height: 590, rotation: 4, span: 'md:col-span-2' },
-    { src: "https://photos.adiavi.com/images/flowers/8.jpg", width: 530, height: 360, rotation: -2, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/9.jpg", width: 370, height: 520, rotation: 1, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/10.jpg", width: 460, height: 310, rotation: -3, span: 'lg:col-span-2' },
-    { src: "https://photos.adiavi.com/images/flowers/11.jpg", width: 600, height: 400, rotation: 2, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/12.jpg", width: 320, height: 480, rotation: -1, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/13.jpg", width: 540, height: 370, rotation: 3, span: '' },
-    { src: "https://photos.adiavi.com/images/flowers/14.jpg", width: 390, height: 540, rotation: -2, span: 'md:col-span-2' },
+function Fireworks() {
+  const fireworksImages = [
+    { src: "https://photos.adiavi.com/images/fireworks/1.JPG", width: 520, height: 350, rotation: -2, span: '' },
+    { src: "https://photos.adiavi.com/images/fireworks/2.JPG", width: 380, height: 570, rotation: 3, span: 'md:col-span-2' },
+    { src: "https://photos.adiavi.com/images/fireworks/3.JPG", width: 450, height: 300, rotation: 1, span: '' },
+    { src: "https://photos.adiavi.com/images/fireworks/4.JPG", width: 580, height: 390, rotation: -3, span: 'lg:col-span-2' },
+    { src: "https://photos.adiavi.com/images/fireworks/5.JPG", width: 340, height: 510, rotation: 2, span: '' },
+    { src: "https://photos.adiavi.com/images/fireworks/6.JPG", width: 490, height: 330, rotation: -1, span: '' },
+    { src: "https://photos.adiavi.com/images/fireworks/7.JPG", width: 410, height: 590, rotation: 4, span: 'md:col-span-2' },
+    { src: "https://photos.adiavi.com/images/fireworks/8.JPG", width: 530, height: 360, rotation: -2, span: '' },
+    { src: "https://photos.adiavi.com/images/fireworks/9.JPG", width: 370, height: 520, rotation: 1, span: '' },
+    { src: "https://photos.adiavi.com/images/fireworks/10.JPG", width: 460, height: 310, rotation: -3, span: 'lg:col-span-2' },
+    { src: "https://photos.adiavi.com/images/fireworks/11.JPG", width: 600, height: 400, rotation: 2, span: '' },
+    { src: "https://photos.adiavi.com/images/fireworks/12.JPG", width: 320, height: 480, rotation: -1, span: '' },
+    { src: "https://photos.adiavi.com/images/fireworks/13.JPG", width: 540, height: 370, rotation: 3, span: '' },
+    { src: "https://photos.adiavi.com/images/fireworks/14.JPG", width: 390, height: 540, rotation: -2, span: 'md:col-span-2' }
   ];
 
   return (
     <div>
       <Navbar />
-      <section className="bg-white mx-auto me max-w-[115rem] px-10 py-32">
+      <section className="bg-white me mx-auto max-w-[115rem] px-10 py-32">
         {/* Header */}
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-4">
-            <button 
-              onClick={handleBackToLocations}
+            <Link 
+              to="/#locations" 
               className="text-xl tracking-wide text-gray-600 hover:text-black transition duration-300"
             >
               ← BACK TO LOCATIONS
-            </button>
-            <p className="text-xl tracking-wide text-gray-800">FLOWERS COLLECTION</p>
+            </Link>
+            <p className="text-xl tracking-wide text-gray-800">FIREWORKS COLLECTION</p>
           </div>
           <h2 className="text-[200px] font-[580] leading-none mb-8 text-black">
-            Nature
+            Fireworks
           </h2>
           <p className="text-3xl text-black leading-snug max-w-4xl">
-            Delicate petals, vibrant colors, and nature's intricate beauty—capturing the ephemeral 
-            artistry of blooms where every flower tells a story of growth, beauty, and transformation.
+            Explosive colors, dramatic skies, and fleeting moments of brilliance—capturing the 
+            spectacular artistry of pyrotechnics where light paints the night with temporary magic.
           </p>
         </div>
 
@@ -61,15 +51,15 @@ function Flowers() {
             Shot With
           </p>
           <ul className="text-2xl text-black font-[500] leading-relaxed space-y-2">
-            <li>SONY A7CR • Macro & Prime Lenses</li>
+            <li>SONY A7CR • Tripod & Long Exposure</li>
             <li>Adobe Lightroom Classic • Photoshop</li>
-            <li>Spring-Summer 2023 • Botanical Gardens & Wild Fields</li>
+            <li>Various Celebrations • 2022-2023 Night Sky Series</li>
           </ul>
         </div>
 
         {/* Messy Image Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
-          {flowersImages.map((image, index) => (
+          {fireworksImages.map((image, index) => (
             <div
               key={index}
               className={`relative group cursor-pointer ${image.span} ${
@@ -80,7 +70,7 @@ function Flowers() {
             >
               <img
                 src={image.src}
-                alt={`Flowers ${index + 1}`}
+                alt={`Fireworks ${index + 1}`}
                 className={`w-full h-auto object-cover shadow-xl transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl ${
                   index % 3 === 0 ? 'border-4 border-white' : 'border-2 border-white'
                 }`}
@@ -103,50 +93,50 @@ function Flowers() {
                 About This Collection
               </p>
               <p className="text-2xl text-black leading-relaxed">
-                This botanical series explores the delicate beauty of flowers in their natural 
-                environments—from intimate macro details to sweeping garden landscapes. Each 
-                photograph celebrates the unique character and vibrant life of these natural wonders.
+                This pyrotechnic series captures the breathtaking beauty of fireworks displays—from 
+                intimate local celebrations to grand professional shows. Each long exposure reveals 
+                the intricate patterns and vibrant colors that flash across the night sky.
               </p>
             </div>
             <div className="md:w-1/2">
               <p className="text-lg tracking-wide text-gray-700 mb-4 uppercase">
-                Floral Variety
+                Events & Displays
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <ul className="text-2xl text-black font-[500] space-y-2">
-                  <li>Roses & Peonies</li>
-                  <li>Wildflowers</li>
-                  <li>Tropical Blooms</li>
-                  <li>Spring Bulbs</li>
-                  <li>Succulents</li>
+                  <li>Fourth of July</li>
+                  <li>New Year's Eve</li>
+                  <li>Music Festivals</li>
+                  <li>Sporting Events</li>
+                  <li>Local Celebrations</li>
                 </ul>
                 <ul className="text-2xl text-black font-[500] space-y-2">
-                  <li>Orchids</li>
-                  <li>Sunflowers</li>
-                  <li>Lavender Fields</li>
-                  <li>Cherry Blossoms</li>
-                  <li>Botanical Gardens</li>
+                  <li>Professional Displays</li>
+                  <li>Cultural Festivals</li>
+                  <li>Wedding Finales</li>
+                  <li>Theme Park Shows</li>
+                  <li>City Celebrations</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          {/* Botanical Elements */}
+          {/* Technical Elements */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-gray-200">
             <div>
               <p className="text-lg tracking-wide text-gray-700 mb-2 uppercase">
-                Photography Style
+                Exposure Technique
               </p>
               <p className="text-2xl text-black font-[500]">
-                Macro & Natural Light
+                Long Exposure & Tripod
               </p>
             </div>
             <div>
               <p className="text-lg tracking-wide text-gray-700 mb-2 uppercase">
-                Season
+                Timing
               </p>
               <p className="text-2xl text-black font-[500]">
-                Spring & Summer
+                Night & Low Light
               </p>
             </div>
             <div>
@@ -154,7 +144,7 @@ function Flowers() {
                 Focus
               </p>
               <p className="text-2xl text-black font-[500]">
-                Color & Texture
+                Color Trails & Patterns
               </p>
             </div>
           </div>
@@ -162,24 +152,24 @@ function Flowers() {
 
         {/* Navigation */}
         <div className="mt-20 flex justify-between items-center pt-10 border-t border-gray-200">
-          <button 
-            onClick={handleBackToLocations}
+          <Link 
+            to="/#locations" 
             className="text-2xl text-black font-[500] hover:text-gray-700 transition duration-300"
           >
             ← All Locations
-          </button>
+          </Link>
           <div className="flex gap-8">
             <Link 
-              to="/cars" 
+              to="/flowers" 
               className="text-2xl text-black font-[500] hover:text-gray-700 transition duration-300"
             >
-              ← Cars
+              ← Flowers
             </Link>
             <Link 
-              to="/fireworks" 
+              to="/club" 
               className="text-2xl text-black font-[500] hover:text-gray-700 transition duration-300"
             >
-              Fireworks →
+              Club →
             </Link>
           </div>
         </div>
@@ -188,4 +178,4 @@ function Flowers() {
   );
 }
 
-export default Flowers;
+export default Fireworks;

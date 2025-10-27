@@ -15,6 +15,7 @@ function Japan() {
     { src: "https://photos.adiavi.com/images/japan/Set%201-015.jpg", width: 520, height: 350, rotation: -2 },
     { src: "https://photos.adiavi.com/images/japan/Set%201-016.jpg", width: 420, height: 280, rotation: 4 },
     { src: "https://photos.adiavi.com/images/japan/Set%201-017.jpg", width: 580, height: 400, rotation: -1 },
+    { src: "https://photos.adiavi.com/images/japan/Set%201-018.jpg", width: 320, height: 480, rotation: 2 },
     { src: "https://photos.adiavi.com/images/japan/Set%201-019.jpg", width: 480, height: 320, rotation: -3 },
     { src: "https://photos.adiavi.com/images/japan/Set%201-020.jpg", width: 530, height: 370, rotation: 1 },
     { src: "https://photos.adiavi.com/images/japan/Set%201-021.jpg", width: 370, height: 530, rotation: -2 },
@@ -27,6 +28,7 @@ function Japan() {
     { src: "https://photos.adiavi.com/images/japan/Set%201-028.jpg", width: 490, height: 330, rotation: 3 },
     { src: "https://photos.adiavi.com/images/japan/Set%201-029.jpg", width: 330, height: 490, rotation: -1 },
     { src: "https://photos.adiavi.com/images/japan/Set%201-030.jpg", width: 470, height: 315, rotation: 2 },
+    { src: "https://photos.adiavi.com/images/japan/Set%201-031.jpg", width: 315, height: 470, rotation: -3 },
   ];
 
   return (

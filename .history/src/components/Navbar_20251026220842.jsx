@@ -22,7 +22,7 @@ const Navbar = () => {
       {!menuOpen && (
         <>
           {/* Desktop Version */}
-          <nav className="hidden md:block fixed mix-blend-difference backdrop-blur-sm transition-all duration-500 top-2 left-1/2 -translate-x-1/2 w-[calc(100%-4rem)] max-w-[112rem] rounded-lg px-8 z-[999999]">
+          <nav className="hidden md:block fixed mix-blend-difference  transition-all duration-500 top-2 left-1/2 -translate-x-1/2 w-[calc(100%-4rem)] max-w-[112rem] rounded-lg px-8 z-[999999]">
             <div className="flex items-center justify-between py-3 relative z-[60]">
               {/* Left - Logo */}
               <a href="/" className="text-2xl font-[500] tracking-wide text-white me">

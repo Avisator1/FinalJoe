@@ -4,21 +4,21 @@ import Navbar from '../components/Navbar';
 
 function Cars() {
   const carsImages = [
-    { src: "https://photos.adiavi.com/images/cars/1.jpg", width: 580, height: 390, rotation: -3, span: 'md:col-span-2' },
-    { src: "https://photos.adiavi.com/images/cars/2.jpg", width: 420, height: 620, rotation: 2, span: '' },
-    { src: "https://photos.adiavi.com/images/cars/3.jpg", width: 520, height: 350, rotation: 1, span: '' },
-    { src: "https://photos.adiavi.com/images/cars/4.jpg", width: 380, height: 540, rotation: -2, span: '' },
-    { src: "https://photos.adiavi.com/images/cars/5.jpg", width: 460, height: 310, rotation: 3, span: 'lg:col-span-2' },
-    { src: "https://photos.adiavi.com/images/cars/6.jpg", width: 600, height: 400, rotation: -1, span: '' },
-    { src: "https://photos.adiavi.com/images/cars/7.jpg", width: 340, height: 510, rotation: 2, span: '' },
-    { src: "https://photos.adiavi.com/images/cars/8.jpg", width: 490, height: 330, rotation: -3, span: 'md:col-span-2' },
-    { src: "https://photos.adiavi.com/images/cars/9.jpg", width: 530, height: 360, rotation: 1, span: '' },
-    { src: "https://photos.adiavi.com/images/cars/10.jpg", width: 410, height: 580, rotation: -2, span: '' },
-    { src: "https://photos.adiavi.com/images/cars/11.jpg", width: 470, height: 320, rotation: 3, span: '' },
-    { src: "https://photos.adiavi.com/images/cars/12.jpg", width: 550, height: 370, rotation: -1, span: 'lg:col-span-2' },
-    { src: "https://photos.adiavi.com/images/cars/13.jpg", width: 390, height: 520, rotation: 2, span: '' },
-    { src: "https://photos.adiavi.com/images/cars/14.jpg", width: 440, height: 300, rotation: -3, span: '' },
-    { src: "https://photos.adiavi.com/images/cars/15.jpg", width: 500, height: 340, rotation: 1, span: 'md:col-span-2' },
+    { src: "https://photos.adiavi.com/images/cars/1.JPG", width: 580, height: 390, rotation: -3, span: 'md:col-span-2' },
+    { src: "https://photos.adiavi.com/images/cars/2.JPG", width: 420, height: 620, rotation: 2, span: '' },
+    { src: "https://photos.adiavi.com/images/cars/3.JPG", width: 520, height: 350, rotation: 1, span: '' },
+    { src: "https://photos.adiavi.com/images/cars/4.JPG", width: 380, height: 540, rotation: -2, span: '' },
+    { src: "https://photos.adiavi.com/images/cars/5.JPG", width: 460, height: 310, rotation: 3, span: 'lg:col-span-2' },
+    { src: "https://photos.adiavi.com/images/cars/6.JPG", width: 600, height: 400, rotation: -1, span: '' },
+    { src: "https://photos.adiavi.com/images/cars/7.JPG", width: 340, height: 510, rotation: 2, span: '' },
+    { src: "https://photos.adiavi.com/images/cars/8.JPG", width: 490, height: 330, rotation: -3, span: 'md:col-span-2' },
+    { src: "https://photos.adiavi.com/images/cars/9.JPG", width: 530, height: 360, rotation: 1, span: '' },
+    { src: "https://photos.adiavi.com/images/cars/10.JPG", width: 410, height: 580, rotation: -2, span: '' },
+    { src: "https://photos.adiavi.com/images/cars/11.JPG", width: 470, height: 320, rotation: 3, span: '' },
+    { src: "https://photos.adiavi.com/images/cars/12.JPG", width: 550, height: 370, rotation: -1, span: 'lg:col-span-2' },
+    { src: "https://photos.adiavi.com/images/cars/13.JPG", width: 390, height: 520, rotation: 2, span: '' },
+    { src: "https://photos.adiavi.com/images/cars/14.JPG", width: 440, height: 300, rotation: -3, span: '' },
+    { src: "https://photos.adiavi.com/images/cars/15.JPG", width: 500, height: 340, rotation: 1, span: 'md:col-span-2' },
   ];
 
   return (

@@ -1,24 +1,20 @@
-// Fireworks.jsx
+// Scotland.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
-function Fireworks() {
-  const fireworksImages = [
-    { src: "https://photos.adiavi.com/images/fireworks/1.jpg", width: 520, height: 350, rotation: -2, span: '' },
-    { src: "https://photos.adiavi.com/images/fireworks/2.jpg", width: 380, height: 570, rotation: 3, span: 'md:col-span-2' },
-    { src: "https://photos.adiavi.com/images/fireworks/3.jpg", width: 450, height: 300, rotation: 1, span: '' },
-    { src: "https://photos.adiavi.com/images/fireworks/4.jpg", width: 580, height: 390, rotation: -3, span: 'lg:col-span-2' },
-    { src: "https://photos.adiavi.com/images/fireworks/5.jpg", width: 340, height: 510, rotation: 2, span: '' },
-    { src: "https://photos.adiavi.com/images/fireworks/6.jpg", width: 490, height: 330, rotation: -1, span: '' },
-    { src: "https://photos.adiavi.com/images/fireworks/7.jpg", width: 410, height: 590, rotation: 4, span: 'md:col-span-2' },
-    { src: "https://photos.adiavi.com/images/fireworks/8.jpg", width: 530, height: 360, rotation: -2, span: '' },
-    { src: "https://photos.adiavi.com/images/fireworks/9.jpg", width: 370, height: 520, rotation: 1, span: '' },
-    { src: "https://photos.adiavi.com/images/fireworks/10.jpg", width: 460, height: 310, rotation: -3, span: 'lg:col-span-2' },
-    { src: "https://photos.adiavi.com/images/fireworks/11.jpg", width: 600, height: 400, rotation: 2, span: '' },
-    { src: "https://photos.adiavi.com/images/fireworks/12.jpg", width: 320, height: 480, rotation: -1, span: '' },
-    { src: "https://photos.adiavi.com/images/fireworks/13.jpg", width: 540, height: 370, rotation: 3, span: '' },
-    { src: "https://photos.adiavi.com/images/fireworks/14.jpg", width: 390, height: 540, rotation: -2, span: 'md:col-span-2' }
+function Scotland() {
+  const scotlandImages = [
+    { src: "https://photos.adiavi.com/images/scotland/1.JPG", width: 580, height: 390, rotation: -3, span: 'md:col-span-2' },
+    { src: "https://photos.adiavi.com/images/scotland/2.JPG", width: 420, height: 620, rotation: 2, span: '' },
+    { src: "https://photos.adiavi.com/images/scotland/3.JPG", width: 520, height: 350, rotation: 1, span: '' },
+    { src: "https://photos.adiavi.com/images/scotland/4.JPG", width: 380, height: 540, rotation: -2, span: 'lg:col-span-2' },
+    { src: "https://photos.adiavi.com/images/scotland/5.JPG", width: 460, height: 310, rotation: 3, span: '' },
+    { src: "https://photos.adiavi.com/images/scotland/6.JPG", width: 600, height: 400, rotation: -1, span: 'md:col-span-2' },
+    { src: "https://photos.adiavi.com/images/scotland/7.JPG", width: 340, height: 510, rotation: 2, span: '' },
+    { src: "https://photos.adiavi.com/images/scotland/8.JPG", width: 490, height: 330, rotation: -3, span: '' },
+    { src: "https://photos.adiavi.com/images/scotland/9.JPG", width: 530, height: 360, rotation: 1, span: 'lg:col-span-2' },
+    { src: "https://photos.adiavi.com/images/scotland/10.JPG", width: 410, height: 580, rotation: -2, span: '' }
   ];
 
   return (
@@ -34,14 +30,14 @@ function Fireworks() {
             >
               ← BACK TO LOCATIONS
             </Link>
-            <p className="text-xl tracking-wide text-gray-800">FIREWORKS COLLECTION</p>
+            <p className="text-xl tracking-wide text-gray-800">SCOTLAND COLLECTION</p>
           </div>
           <h2 className="text-[200px] font-[580] leading-none mb-8 text-black">
-            Fireworks
+            Scotland
           </h2>
           <p className="text-3xl text-black leading-snug max-w-4xl">
-            Explosive colors, dramatic skies, and fleeting moments of brilliance—capturing the 
-            spectacular artistry of pyrotechnics where light paints the night with temporary magic.
+            Ancient castles, misty highlands, and dramatic lochs—capturing the rugged beauty 
+            and timeless mystery of Scotland where history whispers from every stone and glen.
           </p>
         </div>
 
@@ -51,26 +47,24 @@ function Fireworks() {
             Shot With
           </p>
           <ul className="text-2xl text-black font-[500] leading-relaxed space-y-2">
-            <li>SONY A7CR • Tripod & Long Exposure</li>
+            <li>SONY A7CR • 24-70mm & 70-200mm Lenses</li>
             <li>Adobe Lightroom Classic • Photoshop</li>
-            <li>Various Celebrations • 2022-2023 Night Sky Series</li>
+            <li>Spring 2023 • Highlands & Islands Expedition</li>
           </ul>
         </div>
 
-        {/* Messy Image Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
-          {fireworksImages.map((image, index) => (
+        {/* Image Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
+          {scotlandImages.map((image, index) => (
             <div
               key={index}
               className={`relative group cursor-pointer ${image.span} ${
-                index % 4 === 0 ? 'mt-10' : 
-                index % 4 === 1 ? 'mt-4' : 
-                index % 4 === 2 ? 'mt-14' : 'mt-6'
-              } ${index === 3 ? 'lg:col-start-1' : ''}`}
+                index % 3 === 0 ? 'mt-12' : index % 3 === 1 ? 'mt-6' : 'mt-16'
+              } ${index === 0 ? 'lg:col-start-2' : ''}`}
             >
               <img
                 src={image.src}
-                alt={`Fireworks ${index + 1}`}
+                alt={`Scotland ${index + 1}`}
                 className={`w-full h-auto object-cover shadow-xl transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl ${
                   index % 3 === 0 ? 'border-4 border-white' : 'border-2 border-white'
                 }`}
@@ -93,58 +87,58 @@ function Fireworks() {
                 About This Collection
               </p>
               <p className="text-2xl text-black leading-relaxed">
-                This pyrotechnic series captures the breathtaking beauty of fireworks displays—from 
-                intimate local celebrations to grand professional shows. Each long exposure reveals 
-                the intricate patterns and vibrant colors that flash across the night sky.
+                This series explores Scotland's dramatic contrasts—from the moody, atmospheric 
+                highlands to the serene beauty of its islands. Each image tells a story of ancient 
+                landscapes, weathered stone, and the ever-changing Scottish light.
               </p>
             </div>
             <div className="md:w-1/2">
               <p className="text-lg tracking-wide text-gray-700 mb-4 uppercase">
-                Events & Displays
+                Locations Featured
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <ul className="text-2xl text-black font-[500] space-y-2">
-                  <li>Fourth of July</li>
-                  <li>New Year's Eve</li>
-                  <li>Music Festivals</li>
-                  <li>Sporting Events</li>
-                  <li>Local Celebrations</li>
+                  <li>Edinburgh Castle</li>
+                  <li>Loch Ness</li>
+                  <li>Isle of Skye</li>
+                  <li>Glencoe Valley</li>
+                  <li>Stirling Castle</li>
                 </ul>
                 <ul className="text-2xl text-black font-[500] space-y-2">
-                  <li>Professional Displays</li>
-                  <li>Cultural Festivals</li>
-                  <li>Wedding Finales</li>
-                  <li>Theme Park Shows</li>
-                  <li>City Celebrations</li>
+                  <li>Highland Moors</li>
+                  <li>Eilean Donan Castle</li>
+                  <li>Scottish Borders</li>
+                  <li>Ben Nevis</li>
+                  <li>North Coast 500</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          {/* Technical Elements */}
+          {/* Scottish Elements */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-gray-200">
             <div>
               <p className="text-lg tracking-wide text-gray-700 mb-2 uppercase">
-                Exposure Technique
+                Atmosphere
               </p>
               <p className="text-2xl text-black font-[500]">
-                Long Exposure & Tripod
+                Moody & Dramatic
               </p>
             </div>
             <div>
               <p className="text-lg tracking-wide text-gray-700 mb-2 uppercase">
-                Timing
+                Architectural Focus
               </p>
               <p className="text-2xl text-black font-[500]">
-                Night & Low Light
+                Castles & Landscapes
               </p>
             </div>
             <div>
               <p className="text-lg tracking-wide text-gray-700 mb-2 uppercase">
-                Focus
+                Season
               </p>
               <p className="text-2xl text-black font-[500]">
-                Color Trails & Patterns
+                Spring Thaw
               </p>
             </div>
           </div>
@@ -160,16 +154,16 @@ function Fireworks() {
           </Link>
           <div className="flex gap-8">
             <Link 
-              to="/flowers" 
+              to="/ireland" 
               className="text-2xl text-black font-[500] hover:text-gray-700 transition duration-300"
             >
-              ← Flowers
+              ← Ireland
             </Link>
             <Link 
-              to="/club" 
+              to="/cayman" 
               className="text-2xl text-black font-[500] hover:text-gray-700 transition duration-300"
             >
-              Club →
+              Cayman →
             </Link>
           </div>
         </div>
@@ -178,4 +172,4 @@ function Fireworks() {
   );
 }
 
-export default Fireworks;
+export default Scotland;
