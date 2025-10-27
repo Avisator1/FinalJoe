@@ -64,10 +64,10 @@ const Footer = () => {
 
           <p>© 2025 Joe McDavid</p>
 
-          <a href="/terms" className="flex gap-4 sm:gap-6 text-black">
+          <a className="flex gap-4 sm:gap-6 text-black">
             <p className="cursor-pointer hover:opacity-80 transition">Terms</p>
             <p className="cursor-pointer hover:opacity-80 transition">Privacy</p>
-          </a>
+          </div>
 
           <p className="cursor-pointer hover:opacity-80 text-black transition">joemcdavid</p>
         </div>

@@ -14,7 +14,6 @@ import Fireworks from './pages/Fireworks';
 import Club from './pages/Club';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import TermsOfService from './pages/Terms';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -40,7 +39,7 @@ export default function App() {
           <Route path="/japan" element={<Japan />} />
           <Route path="/oregon" element={<Oregon />} />
           <Route path="/ireland" element={<Ireland />} />
-          <Route path="/terms" element={<TermsOfService />} />
+          <Route path="/terms" element={<Terms />} />
           <Route path="/scotland" element={<Scotland />} />
           <Route path="/cayman" element={<Cayman />} />
           <Route path="/cars" element={<Cars />} />
