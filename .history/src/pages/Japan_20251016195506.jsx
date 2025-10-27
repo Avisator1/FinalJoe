@@ -129,7 +129,7 @@ function Japan() {
             ← All Locations
           </Link>
           <Link 
-            to="/#locations" 
+            to="/work" 
             className="text-2xl text-black font-[500] hover:text-gray-700 transition duration-300"
           >
             View Photography Work →
