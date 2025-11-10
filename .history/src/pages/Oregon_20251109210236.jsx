@@ -1,30 +1,27 @@
-// Cayman.jsx
+// Oregon.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
-function Cayman() {
-  const caymanImages = [
-    { src: "https://photos.adiavi.com/images/cayman/1.jpg", width: 520, height: 350, rotation: -2, span: '' },
-    { src: "https://photos.adiavi.com/images/cayman/2.jpg", width: 380, height: 570, rotation: 3, span: 'md:col-span-2' },
-    { src: "https://photos.adiavi.com/images/cayman/3.jpg", width: 450, height: 300, rotation: 1, span: '' },
-    { src: "https://photos.adiavi.com/images/cayman/4.jpg", width: 580, height: 390, rotation: -3, span: 'lg:col-span-2' },
-    { src: "https://photos.adiavi.com/images/cayman/5.jpg", width: 340, height: 510, rotation: 2, span: '' },
-    { src: "https://photos.adiavi.com/images/cayman/6.jpg", width: 490, height: 330, rotation: -1, span: '' },
-    { src: "https://photos.adiavi.com/images/cayman/7.jpg", width: 410, height: 590, rotation: 4, span: 'md:col-span-2' },
-    { src: "https://photos.adiavi.com/images/cayman/8.jpg", width: 530, height: 360, rotation: -2, span: '' },
-    { src: "https://photos.adiavi.com/images/cayman/9.jpg", width: 370, height: 520, rotation: 1, span: '' },
-    { src: "https://photos.adiavi.com/images/cayman/10.jpg", width: 460, height: 310, rotation: -3, span: 'lg:col-span-2' },
-    { src: "https://photos.adiavi.com/images/cayman/11.jpg", width: 600, height: 400, rotation: 2, span: '' },
-    { src: "https://photos.adiavi.com/images/cayman/12.jpg", width: 320, height: 480, rotation: -1, span: '' },
-    { src: "https://photos.adiavi.com/images/cayman/13.jpg", width: 560, height: 370, rotation: 2, span: 'lg:col-span-2' },
-    { src: "https://photos.adiavi.com/images/cayman/14.jpg", width: 400, height: 520, rotation: -2, span: '' },
-  ];
+function Oregon() {
+  // Dynamically generate 36 Oregon images
+  const oregonImages = Array.from({ length: 36 }, (_, i) => {
+    const rotations = [-3, -2, -1, 1, 2, 3, 4];
+    const heights = [300, 330, 350, 370, 400, 430, 450, 480, 510, 540, 570, 600];
+    const spans = ['', 'md:col-span-2', 'lg:col-span-2', 'lg:row-span-2'];
+
+    return {
+      src: `https://photos.adiavi.com/images/oregon/${i + 1}.jpg`,
+      height: heights[Math.floor(Math.random() * heights.length)],
+      rotation: rotations[Math.floor(Math.random() * rotations.length)],
+      span: spans[Math.floor(Math.random() * spans.length)],
+    };
+  });
 
   return (
     <div>
       <Navbar />
-      <section className="bg-white mx-auto max-w-[115rem] px-4 sm:px-6 md:px-10 py-16 md:py-32 me">
+      <section className="bg-white me mx-auto max-w-[115rem] px-4 sm:px-6 md:px-10 py-16 md:py-32">
         {/* Header */}
         <div className="mb-12 mt-20 md:mb-20">
           <div className="flex items-center gap-3 md:gap-4 mb-4">
@@ -34,14 +31,14 @@ function Cayman() {
             >
               ← BACK TO LOCATIONS
             </Link>
-            <p className="text-lg md:text-xl tracking-wide text-gray-800">CAYMAN ISLANDS COLLECTION</p>
+            <p className="text-lg md:text-xl tracking-wide text-gray-800">OREGON COLLECTION</p>
           </div>
           <h2 className="text-7xl sm:text-7xl md:text-[200px] font-[580] leading-none mb-6 md:mb-8 text-black">
-            Cayman Islands
+            Oregon
           </h2>
           <p className="text-xl sm:text-2xl md:text-3xl text-black leading-snug max-w-4xl">
-            Turquoise waters, white sand beaches, and vibrant marine life—capturing the tropical paradise 
-            where crystal-clear Caribbean waters meet endless summer skies.
+            From the rugged Pacific coastline to the dense evergreen forests—capturing the wild, 
+            untamed beauty of the Pacific Northwest in all its moody, atmospheric glory.
           </p>
         </div>
 
@@ -51,26 +48,26 @@ function Cayman() {
             Shot With
           </p>
           <ul className="text-lg md:text-2xl text-black font-[500] leading-relaxed space-y-1 md:space-y-2">
-            <li>SONY ZV-E10 • Underwater Housing</li>
-            <li>Adobe Lightroom Classic • Photoshop</li>
-            <li>Winter 2023 • Caribbean Waters Expedition</li>
+            <li>SONY A7CR • 24-70mm Lens</li>
+            <li>Adobe Lightroom Classic • VSCO Film Presets</li>
+            <li>Fall 2023 • Coastal & Mountain Expedition</li>
           </ul>
         </div>
 
-        {/* Messy Image Grid - Desktop version */}
+        {/* Messy Image Grid */}
         <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
-          {caymanImages.map((image, index) => (
+          {oregonImages.map((image, index) => (
             <div
               key={index}
               className={`relative group cursor-pointer ${image.span} ${
-                index % 4 === 0 ? 'mt-10' : 
+                index % 4 === 0 ? 'mt-8' : 
                 index % 4 === 1 ? 'mt-4' : 
-                index % 4 === 2 ? 'mt-14' : 'mt-6'
-              } ${index === 3 ? 'lg:col-start-1' : ''}`}
+                index % 4 === 2 ? 'mt-12' : 'mt-6'
+              } ${index % 6 === 0 ? 'lg:col-start-2' : ''}`}
             >
               <img
                 src={image.src}
-                alt={`Cayman Islands ${index + 1}`}
+                alt={`Oregon ${index + 1}`}
                 className={`w-full h-auto object-cover shadow-xl transition-all duration-500 ${
                   index % 3 === 0 ? 'border-4 border-white' : 'border-2 border-white'
                 }`}
@@ -80,17 +77,18 @@ function Cayman() {
                   maxHeight: '650px'
                 }}
               />
+              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-5 transition-opacity duration-300" />
             </div>
           ))}
         </div>
 
-        {/* Mobile Image Grid - Simple stacked layout */}
+        {/* Mobile Grid */}
         <div className="md:hidden space-y-6">
-          {caymanImages.map((image, index) => (
+          {oregonImages.map((image, index) => (
             <div key={index} className="relative group cursor-pointer">
               <img
                 src={image.src}
-                alt={`Cayman Islands ${index + 1}`}
+                alt={`Oregon ${index + 1}`}
                 className="w-full h-auto object-cover shadow-xl"
               />
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-5 transition-opacity duration-300" />
@@ -106,9 +104,9 @@ function Cayman() {
                 About This Collection
               </p>
               <p className="text-lg md:text-2xl text-black leading-relaxed">
-                From stunning underwater coral gardens to pristine Seven Mile Beach, this series 
-                captures the essence of Caribbean beauty—vibrant colors, brilliant sunlight, and 
-                the incredible biodiversity of Cayman's marine ecosystems.
+                This series explores the dramatic landscapes of Oregon—where misty coastlines meet 
+                ancient forests. Each image captures the raw, elemental power of nature and the quiet 
+                moments in between the storms.
               </p>
             </div>
             <div className="md:w-1/2">
@@ -117,48 +115,42 @@ function Cayman() {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <ul className="text-lg md:text-2xl text-black font-[500] space-y-1 md:space-y-2">
-                  <li>Seven Mile Beach</li>
-                  <li>Stingray City</li>
-                  <li>Rum Point</li>
-                  <li>Bloody Bay Wall</li>
-                  <li>George Town</li>
+                  <li>Cannon Beach</li>
+                  <li>Haystack Rock</li>
+                  <li>Columbia Gorge</li>
+                  <li>Multnomah Falls</li>
+                  <li>Crater Lake</li>
                 </ul>
                 <ul className="text-lg md:text-2xl text-black font-[500] space-y-1 md:space-y-2">
-                  <li>Crystal Caves</li>
-                  <li>Starfish Point</li>
-                  <li>Barkers Beach</li>
-                  <li>Queen Elizabeth II Botanic Park</li>
-                  <li>West Bay</li>
+                  <li>Pacific Coast Highway</li>
+                  <li>Smith Rock</li>
+                  <li>Portland Forests</li>
+                  <li>Three Capes Loop</li>
+                  <li>Mount Hood</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          {/* Tropical Elements */}
+          {/* Weather & Conditions */}
           <div className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 pt-8 border-t border-gray-200">
             <div>
               <p className="text-base md:text-lg tracking-wide text-gray-700 mb-2 uppercase">
-                Water Conditions
+                Weather Conditions
               </p>
-              <p className="text-lg md:text-2xl text-black font-[500]">
-                Crystal Clear & Turquoise
-              </p>
-            </div>
-            <div>
-              <p className="text-base md:text-lg tracking-wide text-gray-700 mb-2 uppercase">
-                Focus
-              </p>
-              <p className="text-lg md:text-2xl text-black font-[500]">
-                Marine & Beachscapes
-              </p>
+              <p className="text-lg md:text-2xl text-black font-[500]">Moody & Overcast</p>
             </div>
             <div>
               <p className="text-base md:text-lg tracking-wide text-gray-700 mb-2 uppercase">
                 Season
               </p>
-              <p className="text-lg md:text-2xl text-black font-[500]">
-                Winter Escape
+              <p className="text-lg md:text-2xl text-black font-[500]">Autumn Colors</p>
+            </div>
+            <div>
+              <p className="text-base md:text-lg tracking-wide text-gray-700 mb-2 uppercase">
+                Focus
               </p>
+              <p className="text-lg md:text-2xl text-black font-[500]">Landscape & Nature</p>
             </div>
           </div>
         </div>
@@ -173,16 +165,16 @@ function Cayman() {
           </Link>
           <div className="flex gap-4 sm:gap-8">
             <Link 
-              to="/scotland" 
+              to="/japan" 
               className="text-lg sm:text-xl md:text-2xl text-black font-[500] hover:text-gray-700 transition duration-300"
             >
-              ← Scotland
+              ← Japan
             </Link>
             <Link 
-              to="/cars" 
+              to="/ireland" 
               className="text-lg sm:text-xl md:text-2xl text-black font-[500] hover:text-gray-700 transition duration-300"
             >
-              Cars →
+              Ireland →
             </Link>
           </div>
         </div>
@@ -191,4 +183,4 @@ function Cayman() {
   );
 }
 
-export default Cayman;
+export default Oregon;
